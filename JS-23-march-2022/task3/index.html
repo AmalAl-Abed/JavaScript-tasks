@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="flags" onchange="fun()" style="display: block;">
+        <option hidden selected>select</option>
+<option value="https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg">Palastine</option>
+<option value="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/1200px-Flag_of_Jordan.svg.png">Jordan</option>
+<option value="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Lebanon.svg/1200px-Flag_of_Lebanon.svg.png">Lebanon</option>
+<option value="https://www.youngpioneertours.com/wp-content/uploads/2021/01/egypt-162284_1280-1024x683.png">Egypt</option>
+    </select>
+
+    <img id="new" src="https://www.allianceplast.com/wp-content/uploads/no-image.png" width="300px" height="300px">
+<script>
+
+    function fun(){
+let x=document.getElementById("flags").value;
+document.getElementById('new').src=x;
+    }
+
+ 
+</script>
+
+</body>
+</html>

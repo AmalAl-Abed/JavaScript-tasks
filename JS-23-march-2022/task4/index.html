@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       div{
+width: 500px;
+height: 200px;
+border: 2px solid black;
+text-align: center;
+margin-top: 20px;
+
+       }
+   </style>
+</head>
+<body>
+ <select id="font" onchange="changefont()" >
+
+<option selected value="Verdana, Geneva, Tahoma, sans-serif">Arial</option>
+<option value="Times New Roman">Times New Roman</option>
+<option value="cursive">cursive</option>
+<option value="fantasy">fantasy</option>
+    </select>
+
+<input type="number" value="12" id="fontSize" onchange="fntsize()">
+
+<input type="checkbox" id="italic1" onchange="italicfont()" value="italic">
+  <label for="italic1"> italic</label>
+
+  <input type="checkbox" id="bold1" onchange="boldfont()" value="bold">
+  <label for="bold1"> Bold</label>
+
+
+  <input type="checkbox" id="underline1" onchange="underline()" value="underline">
+  <label for="underline1"> underline</label>
+
+
+<div><p id="content">Hello Im amal al-abed</p></div>
+
+<script src="main.js"></script>
+</body>
+</htmltext
