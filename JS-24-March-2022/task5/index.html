@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var persons = [
+        { name: { first: "John", last: "Hob" }, age: 35 },
+        { name: { first: "Alex", last: "Mercer" }, age: 25 },
+        { name: { first: "Alice", last: "Zaheer" }, age: 24 },
+        { name: { first: "Zues", last: "Odin" }, age: 55 },
+        { name: { first: "Soso", last: "Al-Amora" }, age: 67 },
+      ];
+
+      var obj ={} ;
+
+function repeatWord(text) {
+    let newText=text.toUpperCase().split(" ");
+    let arrtest =[]
+    
+    for(let i=0;i<newText.length; i++) {
+        arrtest=newText[i]
+        counter=0
+        for(let j =0 ; j<newText.length;j++){
+            arrtest=newText[j]
+            if(newText[i]==arrtest){
+                counter++
+            }
+            
+           obj[newText[i]]=counter;
+        }  
+    }
+    return obj;
+}
+
+repeatWord("My name is alex mercer class name B baba mama hello Hello HELLO");
+    </script>
+  </body>
+</html>

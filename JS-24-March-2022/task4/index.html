@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var persons = [
+        { name: { first: 'John', last: 'Hob' }, age: 35 },
+        { name: { first: 'Alex', last: 'Mercer' }, age: 25 },
+        { name: { first: 'Alice', last: 'Zaheer' }, age: 24 },
+        { name: { first: 'Zues', last: 'Odin' }, age: 55 },
+        { name: { first: 'Soso', last: 'Al-Amora' }, age: 67 }
+      ];
+
+      function olderPerson(persons)
+      { let oldest={};
+        let oldestAge = 0;
+        
+
+      for(let i=0; i< persons.length ; i++){
+        let age=persons[i].age;
+        if(age >= oldestAge){
+            oldestAge=age;
+            oldest=persons[i].name;
+        }
+      }
+      
+      return oldest;
+      }
+      console.log(olderPerson(persons));
+    </script>
+  </body>
+</html>

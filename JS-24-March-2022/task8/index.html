@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var persons = [
+    { name: { first: "John", last: "Hob" }, age: 35 },
+    { name: { first: "Alex", last: "Mercer" }, age: 25 },
+    { name: { first: "Alice", last: "Zaheer" }, age: 24 },
+    { name: { first: "Zues", last: "Odin" }, age: 55 },
+    { name: { first: "Soso", last: "Al-Amora" }, age: 67 },
+  ];
+
+
+    function selectFromObject(obj, arr) {
+        let converter = Object.keys(obj);
+        for (let i = 0; i < converter.length; i++) {
+            if (converter[i] !== arr[i]) {
+                delete converter[i];
+            }
+        }
+        return converter;
+    }
+    
+    let select = selectFromObject({ a: 1, cat: 3, b: 5 }, ['a', 'cat', 'd']);
+    document.write(select);
+    </script>
+</body>
+</html>
