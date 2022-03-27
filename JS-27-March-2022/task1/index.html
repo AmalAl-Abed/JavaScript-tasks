@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="master.css" />
+    <title>Document</title>
+    <style>
+      #card {
+        border: 3px solid rgb(131, 114, 114);
+        width: 400px;
+        height: 400px;
+        display: none;
+        background-color: pink;
+        line-height: 30px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <form>
+        <label for="fname"> Name:</label>
+        <input type="text" id="fname" name="fname" /><br /><br />
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" /><br /><br />
+
+        <label for="gender">Gender</label>
+
+        <input type="radio" id="male" class="gender" value="1" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" class="gender" value="0" />
+        <label for="female">Female</label><br /><br />
+
+        <textarea id="desc" rows="4" cols="50" name="comment" form="usrform">
+Brief Description about you....</textarea
+        ><br />
+
+        <label for="major">major:</label>
+        <input type="text" id="major" name="major" /><br /><br />
+
+        <label for="uni">University:</label>
+        <input type="text" id="uni" name="uni" /><br /><br />
+
+        <label for="start">birth date:</label>
+        <input type="date" id="start" name="trip-start" /> <br /><br />
+
+        <label>you fav programming language:</label><br />
+
+      <div id="language">
+          <input type="checkbox" id="html" class ="lang" value="HTML"/>
+          <label for="html">HTML</label><br/>
+
+          <input type="checkbox" id="css"   class ="lang" value="CSS"/>
+          <label for="css">CSS</label><br />
+
+          <input type="checkbox" id="javascript" class ="lang" value="JS"/>
+          <label for="javascript">JavaScript</label><br /><br />
+
+       </div>
+
+
+        <input type="file" id="myFile" name="filename" />
+
+        <br/><br/>
+
+        <input type="submit" onclick="store()" />
+
+        <div id="card">
+            <img id="img" src="" alt="" width="200px" height="200px">
+        </div>
+      </form>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
